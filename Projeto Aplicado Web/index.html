@@ -5,51 +5,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
     <title>Loja Online</title>
-    <style>
-        body {
-            height: 100vh;
-            background: linear-gradient(#79e4a6, #1bc296);
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Nome do site -->
     <header>
-        <h1 style="text-align: left; color: blueviolet;">Loja Online</h1>
+        <h1>Loja das Tintas</h1>
     </header>
     <!-- Caixa para criar conta e entrar -->
     <section>
         <form action="script.php" method="post">
-            <p style="text-align: right;">
-                <input type="submit" style="background-color: blueviolet; color: aliceblue; font-size: 18px;"
-                    value="Criar conta">
-
-                <input type="submit" style="background-color: blueviolet; color: aliceblue; font-size: 18px;"
-                    value="Entrar">
+            <p>
+                <input type="submit" class="botao" value="Criar conta">
+                <input type="submit" class="botao" value="Entrar">
             </p>
         </form>
     </section>
     <!-- Caixa de pesquisa -->
-    <div style="text-align: center;" ;class="search-box">
-        <div class="icon"></div>
-        <div class="input">
-            <input type="text" placeholder="Pesquise aqui..." id="inputSearch">
-            <a href="#">
-                <img src="loupe.png" alt="Lupa" height="20" width="20">
-            </a>
-
-        </div>
+    <div id="search-box">
+        <input type="text" class="input-text-box" placeholder="Pesquise aqui..." id="inputSearch">
+        <a href="tinta.html"> <!--trocar link por event listener-->
+            <img src="Imagens/loupe.png" alt="Lupa" class="icon">
+        </a>
     </div>
-    <img src="img1.png" alt="Tinta">
-    <img src="img2.png" alt="Creme">
-    <img src="img3.png" alt="Açucar">
-    <img src="img4.png" alt="Vitamina">
-    <img src="img5.png" alt="Cosmeticos">
+
+    <!-- Produtos -->
+    <ul>
+        <!-- Latex Acrilico -->
+        <img src="Imagens/Latex Acrilico.png" alt="Latex Acrilico" width="150">
+
+        <!-- Esmalte Sintetico -->
+        <img src="Imagens/Esmalte Sintetico.png" alt="Esmalte Sintetico" width="150">
+
+        <!-- Spray Amarelo -->
+        <img src="Imagens/Spray Amarelo.png" alt="Spray Amarelo" width="50">
+
+        <!-- Spray Preto -->
+        <img src="Imagens/Spray Preto.png" alt="Spray Preto" width="50">
+
+        <!-- Spray  -->
+        <img src="Imagens/Spray Aluminio.png" alt="Spray Aluminio" width="50">
+
+    </ul>
+    <ul>
+        <li><a href="TintaLatex.html"> Latex Acrílico Fosco Standard</a></li>
+        <li><a href="EsmalteSintetico.html">Esmalte Sintetico</a></li>
+        <li><a href="SprayAmarelo.html">Tinta Spray Amarelo</a></li>
+        <li><a href="SprayPreto.html">Tinta Spray Preto</a></li>
+        <li><a href="SprayAluminio.html">Tinta Spray Aluminio</a></li>
+    </ul>
 </body>
 
 </html>

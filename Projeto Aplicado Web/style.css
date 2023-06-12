@@ -1,0 +1,45 @@
+body {
+    height: 100vh;
+    background: linear-gradient(#79e4a6, #1bc296);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+}
+
+h2{
+    color: azure;
+}
+
+p {
+    text-align: right;
+}
+
+.botao {
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.input-text-box {}
+
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+#search-box {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}

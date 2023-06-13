@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Nome do site -->
+    <header>
+        <h1>Loja das Tintas</h1>
+    </header>
+    <!-- Caixa para criar conta e entrar -->
+    <section class="login">
+        <form action="script.php" method="post">
+                <input type="submit" class="botao" value="Criar conta">
+                <input type="submit" class="botao" value="Entrar">
+        </form>
+    </section>
+    <hr>
+
+    <!-- Caixa de pesquisa -->
+    <div id="search-box">
+        <input type="text" class="input-text-box" placeholder="Pesquise aqui..." id="inputSearch">
+        <a href=""> <!--trocar link por event listener-->
+            <img src="Imagens/loupe.png" alt="Lupa" class="icon">
+        </a>
+    </div>
+    <br>
+
+    <!-- Produtos -->
+    <section class="produtos">
+    </section>
+
+    <footer>
+            <h4>Contato</h4>
+            <img src="./imagens/droppin.png" width="20"/>
+            <i>Rua das Laranjeiras 234, Matagal - AC, Brasil</i><br>
+            <img src="./imagens/phone.png" width="20"/>
+            <i><a href="tel:+5548999888777">+55 48 999888777</a></i><br>
+            <img src="./imagens/email.png" width="20"/>
+            <i><a href="mailto:email@email.com">email@email.com</a></i>
+    </footer>
+
+
+</body>
+
+</html>
